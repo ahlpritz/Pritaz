@@ -1,0 +1,99 @@
+﻿@page
+@model Pritaz.Pages.DetailsModel
+@{
+    ViewData["Title"] = "GarPo";
+}
+<br />
+<br />
+
+
+<main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+        <div class="container">
+
+            <div class="d-flex justify-content-between align-items-center">
+                <h2>Portfolio Details</h2>
+                <ol>
+                    <li> <a asp-page="/Index">Home</a> </li>
+                    <li>Portfolio Details</li>
+                </ol>
+            </div>
+
+        </div>
+    </section><!-- End Breadcrumbs -->
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+        <div class="container">
+
+            <div class="row gy-4">
+
+                <div class="col-lg-8">
+                    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"  aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="10000">
+                                <img src="~/assets/img/projects/logingarpo.png" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>LOGIN PAGE OF GARPO APP</h5>
+                                    <p>This is where Users can Login their accounts.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <img src="~/assets/img/projects/garpo.png" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>THE GARPO POINT HISTORY</h5>
+                                    <p>This is where Users can see the Point/Transaction History.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="~/assets/img/projects/statsgarpo.png" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>THE GARPO STATISTICS PAGE</h5>
+                                    <p>This is where the Statistics for the whole week.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="portfolio-info">
+                        <h3>Project information</h3>
+                        <ul>
+                            <li><strong>Category</strong>: Mobile Applicaiton Development</li>
+                            <li><strong>Purpose</strong>: Thesis</li>
+                            <li><strong>Project date</strong>: Janury, 2023  - May, 2023</li>
+                            <li><strong>Project URL</strong>: <a href="https://github.com/rosef48/garpo_app">Garpo Application</a></li>
+                        </ul>
+                    </div>
+                    <div class="portfolio-description">
+                        <h2>GARPO: Garbage Mo, Points Ko</h2>
+                        <p>
+                            The "GARPO: Garbage Mo, Points Ko"/ GMP App is a mobile application that helps people to quickly separate their garbage from their recyclables by using the segregation machine. The mobile application also has a unique QR code for each user. When users scan the QR code, they will earn points which they can redeem for incentives such as gift cards.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section><!-- End Portfolio Details Section -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.4.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-ZSKJo1IyZUKzgbx5/v26x6lYz68T6D1RjFTQ+l73B37ixK/fBdEvafKzvKL4jYgw" crossorigin="anonymous"></script>
+
+
+</main><!-- End #main -->

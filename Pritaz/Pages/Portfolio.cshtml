@@ -1,6 +1,7 @@
 ﻿@page
 @model Pritaz.Pages.PortfolioModel
 @{
+    ViewData["Title"] = "Portfolio";
 }
 <br />
 <br />
@@ -11,7 +12,7 @@
 
         <div class="section-title" data-aos="fade-left">
             <h2>Portfolio</h2>
-            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+            <p>Welcome to my programming portfolio, a digital gateway to the world of my coding endeavors. Here, I invite you to embark on an immersive journey through a collection of stellar applications and websites that I've crafted with passion and expertise. From innovative web solutions to sleek user interfaces, each project represents a testament to my programming skills and dedication. Explore the seamless fusion of design and functionality as you navigate through my creations, witnessing firsthand the transformative power of code. Join me on this odyssey of programming excellence and discover the possibilities that await within my portfolio.</p>
         </div>
 
         <div class="row" data-aos="fade-up" data-aos-delay="100">
@@ -19,7 +20,7 @@
                 <ul id="portfolio-flters">
                     <li data-filter="*" class="filter-active">All</li>
                     <li data-filter=".filter-app">App</li>
-                    <li data-filter=".filter-card">Card</li>
+                    <li data-filter=".filter-card">System</li>
                     <li data-filter=".filter-web">Web</li>
                 </ul>
             </div>
@@ -29,13 +30,13 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-app">
                 <div class="portfolio-wrap">
-                    <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+                    <img src="assets/img/projects/garpo.png" class="img-fluid" alt="">
                     <div class="portfolio-info">
-                        <h4>App 1</h4>
+                        <h4>Application 1</h4>
                         <p>App</p>
                         <div class="portfolio-links">
-                            <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                            <a asp-page="/Details">More Details<i class="bx bx-link"></i></a>
+                            <a href="assets/img/projects/garpo.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                            <a asp-page="./ProjectsPages/Details">More Details<i class="bx bx-link"></i></a>
                         </div>
                     </div>
                 </div>
@@ -43,13 +44,13 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-web">
                 <div class="portfolio-wrap">
-                    <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+                    <img src="assets/img/projects/greenlhand.PNG" class="img-fluid" alt="">
                     <div class="portfolio-info">
-                        <h4>Web 3</h4>
+                        <h4>Website 1</h4>
                         <p>Web</p>
                         <div class="portfolio-links">
-                            <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                            <a asp-page="/Details">More Details<i class="bx bx-link"></i></a>
+                            <a href="assets/img/projects/greenlhand.PNG" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                            <a asp-page="./ProjectsPages/GreenlhandDetails">More Details<i class="bx bx-link"></i></a>
                         </div>
                     </div>
                 </div>
@@ -57,13 +58,13 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-app">
                 <div class="portfolio-wrap">
-                    <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+                    <img src="assets/img/projects/vacc.PNG" class="img-fluid" alt="">
                     <div class="portfolio-info">
-                        <h4>App 2</h4>
+                        <h4>Application 2</h4>
                         <p>App</p>
                         <div class="portfolio-links">
-                            <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
-                            <a asp-page="/Details">More Details<i class="bx bx-link"></i></a>
+                            <a href="assets/img/projects/vacc.PNG" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                            <a asp-page="./ProjectsPages/VaccinationDetails">More Details<i class="bx bx-link"></i></a>
                         </div>
                     </div>
                 </div>
@@ -71,19 +72,19 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-card">
                 <div class="portfolio-wrap">
-                    <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+                    <img src="assets/img/projects/iotgarpo.PNG" class="img-fluid" alt="">
                     <div class="portfolio-info">
-                        <h4>Card 2</h4>
-                        <p>Card</p>
+                        <h4>System 1</h4>
+                        <p>System</p>
                         <div class="portfolio-links">
-                            <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
-                            <a asp-page="/Details">More Details<i class="bx bx-link"></i></a>
+                            <a href="assets/img/projects/iotgarpo.PNG" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
+                            <a asp-page="./ProjectsPages/IoTGarpo">More Details<i class="bx bx-link"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+           @* <div class="col-lg-4 col-md-6 portfolio-item filter-web">
                 <div class="portfolio-wrap">
                     <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
                     <div class="portfolio-info">
@@ -111,8 +112,8 @@
                     </div>
                 </div>
             </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+*@
+            @*<div class="col-lg-4 col-md-6 portfolio-item filter-card">
                 <div class="portfolio-wrap">
                     <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
                     <div class="portfolio-info">
@@ -125,8 +126,8 @@
                     </div>
                 </div>
             </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+*@
+          @*  <div class="col-lg-4 col-md-6 portfolio-item filter-card">
                 <div class="portfolio-wrap">
                     <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
                     <div class="portfolio-info">
@@ -138,9 +139,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>*@
 
-            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+           @* <div class="col-lg-4 col-md-6 portfolio-item filter-web">
                 <div class="portfolio-wrap">
                     <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
                     <div class="portfolio-info">
@@ -153,7 +154,7 @@
                     </div>
                 </div>
             </div>
-
+            *@
         </div>
 
     </div>

@@ -889,6 +889,11 @@ section {
   width: 100%;
 }
 
+.carousel-inner {
+    display: flex;
+    flex-direction: row;
+}
+
 .portfolio-details .portfolio-details-slider .swiper-pagination {
   margin-top: 20px;
   position: relative;
